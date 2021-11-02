@@ -15,4 +15,4 @@ else:
             c0 = 3 * c0 + 1
             print (c0)
             steps += 1
-print("total number of steps", steps)
+    print("total number of steps", steps)
