@@ -58,7 +58,25 @@ def make_list_of_free_fields(board):
 def victory_for(board, sign):
     # The function analyzes the board's status in order to check if 
     # the player using 'O's or 'X's has won the game
-
+    print('Checking to see if Player', sign,' is the winner!')
+    if board[0][0] == sign and board[0][1] == sign and board[0][2] == sign:
+        return sign
+    elif board[1][0] == sign and board[1][1] == sign and board[1][2] == sign:
+        return sign
+    elif board[2][0] == sign and board[2][1] == sign and board[2][2] == sign:
+        return sign
+    elif board[0][0] == sign and board[1][0] == sign and board[2][0] == sign:
+        return sign
+    elif board[0][1] == sign and board[1][1] == sign and board[2][1] == sign:
+        return sign
+    elif board[0][2] == sign and board[1][2] == sign and board[2][2] == sign:
+        return sign
+    elif board[0][0] == sign and board[1][1] == sign and board[2][2] == sign:
+        return sign
+    elif board[2][0] == sign and board[1][1] == sign and board[0][2] == sign:
+        return sign
+    else:
+        print('We do not have a winner yet')
 
 def draw_move(board):
     # The function draws the computer's move and updates the board.
