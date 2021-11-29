@@ -79,4 +79,66 @@ def victory_for(board, sign):
         print('We do not have a winner yet')
 
 def draw_move(board):
-    # The function draws the computer's move and updates the board.
+ # The function draws the computer's move and updates the board.
+    while True:
+
+        row = randrange(3)
+        column = randrange(3)
+
+        if ([row], [column]) not in free_squares:
+            continue
+        else:
+            board[row][column] = 'X'
+            return
+
+board = [ ['1', '2', '3'], ['4', 'X', '6'], ['7', '8', '9'] ]
+numberOfMoves = 1
+human = 'O'
+computer = 'X'
+
+display_board(board)
+enter_move(board)
+display_board(board)
+make_list_of_free_fields(board)
+victory_for(board, human)
+victory_for(board, computer)
+draw_move(board)
+victory_for(board, human)
+victory_for(board, computer)
+display_board(board)
+
+enter_move(board)
+display_board(board)
+make_list_of_free_fields(board)
+victory_for(board, human)
+victory_for(board, computer)
+draw_move(board)
+victory_for(board, human)
+victory_for(board, computer)
+
+enter_move(board)
+display_board(board)
+make_list_of_free_fields(board)
+victory_for(board, human)
+victory_for(board, computer)
+draw_move(board)
+victory_for(board, human)
+victory_for(board, computer)
+
+enter_move(board)
+display_board(board)
+make_list_of_free_fields(board)
+victory_for(board, human)
+victory_for(board, computer)
+draw_move(board)
+victory_for(board, human)
+victory_for(board, computer)
+
+enter_move(board)
+display_board(board)
+make_list_of_free_fields(board)
+victory_for(board, human)
+victory_for(board, computer)
+draw_move(board)
+victory_for(board, human)
+victory_for(board, computer)
